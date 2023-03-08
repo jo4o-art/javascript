@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+</head>
+<body>
+    <h1>Países</h1>
+    <label for="pais">Seu País: </label>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Enviar" onclick="enviar()">
+    <div id="res"></div>
+
+    <script>       
+        function enviar() {
+            var país = document.querySelector('input#pais').value
+            var res = document.querySelector('#res')
+            
+            if (país == 'Brasil') {
+                res.innerHTML = `<p><strong>Brasileiro!</strong></p>`
+            } else {
+                res.innerHTML = `<p><strong>Estranjeiro!</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
