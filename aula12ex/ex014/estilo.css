@@ -9,15 +9,26 @@ header {
 }
 
 section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     background-color: white;
     border-radius: 10px;
     padding: 15px;
     width: 500px;
-    margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45);
 }
 
+div {
+    text-align: center;
+    padding: 8px;
+}
+
 footer {
+    position: relative;
+    top: 84vh;
     color: white;
     text-align: center;
     font-style: italic;
