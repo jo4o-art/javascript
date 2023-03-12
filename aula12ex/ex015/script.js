@@ -1,3 +1,12 @@
+function carregar() {
+    var data = new Date()
+    var ano = data.getFullYear()
+    var txtano = document.getElementById('txtano')
+
+    txtano.setAttribute('value', ano)
+    txtano.setAttribute('max', ano)
+}
+
 function verificar() {
 
     var data = new Date()
