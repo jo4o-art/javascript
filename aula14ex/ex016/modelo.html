@@ -9,19 +9,24 @@
 </head>
 <body>
     <header>
-        <h1>Vamos Contar</h1>
+        <h1>Contador</h1>
     </header>
     <section>
-        <div id="dado" class="campo">
-            <input type="number" name="inicio" id="txti" class="form">
-            <p><label for="txti">Início: </label>
+        <div id="dados">
+            <p class="campo">
+                <input type="number" name="inicio" id="txti" class="form">
+                <label for="txti">Início: </label>
             </p>
-            <input type="number" name="fim" id="txtf" class="form">
-            <p><label for="txtf">Fim: </label>
+            <p class="campo">
+                <input type="number" name="fim" id="txtf" class="form">
+                <label for="txtf">Fim: </label>
             </p>
-            <input type="number" name="passo" id="txtp" class="form">
-            <p><label for="txtp">Passo: </label>
+            <p class="campo">
+                <input type="number" name="passo" id="txtp" class="form">
+                <label for="txtp">Passo: </label>
             </p>
+        </div>
+        <div id="botao">
             <p><input type="button" value="Contar" id="button" onclick="contar()"></p>
         </div>
         <div id="res">
