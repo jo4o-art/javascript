@@ -12,12 +12,15 @@
         <h1>Vamos Contar</h1>
     </header>
     <section>
-        <div id="dados">
-            <p>Início: <input type="number" name="inicio" id="txti">
+        <div id="dado" class="campo">
+            <input type="number" name="inicio" id="txti" class="form">
+            <p><label for="txti">Início: </label>
             </p>
-            <p>Fim: <input type="number" name="fim" id="txtf">
+            <input type="number" name="fim" id="txtf" class="form">
+            <p><label for="txtf">Fim: </label>
             </p>
-            <p>Passo: <input type="number" name="passo" id="txtp">
+            <input type="number" name="passo" id="txtp" class="form">
+            <p><label for="txtp">Passo: </label>
             </p>
             <p><input type="button" value="Contar" id="button" onclick="contar()"></p>
         </div>
